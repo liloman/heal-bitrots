@@ -8,7 +8,7 @@
 # dir where will be saved the recovery data (bitrot dbs and par2 files)
 # better mirror/backup/sync it also ;)
 declare BITROT_BACKUPS=${BITROT_BACKUPS:-~/.bitrot_backups}
-declare BITROT_BACKUPS_DEST=${BITROT_BACKUPS_DEST:-$BITROT_BACKUPS/bitrot_backups_dest}
+declare BITROT_BACKUPS_DEST=${BITROT_BACKUPS_DEST:-$BITROT_BACKUPS/bitrot_dirs}
 declare PAR2_NAME=files.par2
 declare LOG_CREATE=/tmp/.generate_par2_create.log
 declare LOG_REPAIR=/tmp/.generate_par2_repair.log
