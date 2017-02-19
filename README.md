@@ -13,6 +13,13 @@ cd heal-bitrots/
 ./heal-bitrots.sh /yourdir /anothedir
 ```
 
+Requires:
+
+```bash
+pip install --user bitrot
+dnf/apt/pacman/x install par2cmdline
+```
+
 Systemd daemon coming soon with notify of bitrot detection.
 
 #Use
