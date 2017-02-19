@@ -284,9 +284,9 @@ split_dir() {
 #set memory and number of threads
 set_default_global_options 
 
+cur=$PWD
 if [[ -n $1 ]]; then
     #For each path
-    cur=$PWD
     for path; do
         cd "$cur"
         split_dir "$path"
@@ -294,6 +294,7 @@ if [[ -n $1 ]]; then
 elif [[ -f $BITROT_BACKUPS_DEST ]]; then
     while IFS= read -r path
     do
+        cd "$cur"
         split_dir "$path"
     done < $BITROT_BACKUPS_DEST
 else
